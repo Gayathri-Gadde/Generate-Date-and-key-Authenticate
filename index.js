@@ -5,7 +5,7 @@ async function run() {
   try {
     // Retrieve the inputs defined in action.yml
     const functionUrl = core.getInput('function-url');
-    const functionkey = core.getInput('function-key');
+    const functionKey = core.getInput('function-key');
     
     console.log(`Fetching data from URL: ${functionUrl}`);
     
