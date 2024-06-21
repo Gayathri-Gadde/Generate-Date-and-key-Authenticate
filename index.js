@@ -10,7 +10,7 @@ async function run() {
     console.log(`Fetching data from URL: ${functionUrl}`);
     
     // Make the HTTP GET request to the Azure Function with the function key in the headers
-    const response = await axios.get(functionUrl, {
+    const response = await axios.post(functionUrl, {
       headers: {
         'x-functions-key': functionKey
       }
